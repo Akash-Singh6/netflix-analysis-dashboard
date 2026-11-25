@@ -13,5 +13,5 @@ A Python and Flask web application that analyzes Netflix's movie and TV catalog 
 ## Setup & Run Locally
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/](https://github.com/)<Akash-Singh6>/netflix-analysis-dashboard.git
+   git clone https://github.com/Akash-Singh6/netflix-analysis-dashboard.git
    cd netflix-analysis-dashboard
