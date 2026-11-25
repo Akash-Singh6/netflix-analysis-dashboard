@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Genres</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Top 10 Genres</h1>
+        <ul class="list-group">
+            {% for genre, count in top_genres.items() %}
+                <li class="list-group-item">{{ genre }} - {{ count }}</li>
+            {% endfor %}
+        </ul>
+        <div class="text-center mt-4">
+            <a href="{{ url_for('index') }}" class="btn btn-info">Back to Home</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
